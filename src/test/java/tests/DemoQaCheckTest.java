@@ -4,7 +4,6 @@ import api.BooksApi;
 import helpers.WithLogin;
 import models.LoginResponse;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -20,7 +19,6 @@ public class DemoQaCheckTest extends TestBase {
     private final String USER_NAME = "basil8";
 
     @Test
-    //@Tag("API+UI")
     @WithLogin
     @DisplayName("Полный workflow: авторизация, работа с книгами, UI проверки")
     void fullDemoQaWorkflowTest() {
